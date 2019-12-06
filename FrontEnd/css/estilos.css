@@ -1,0 +1,108 @@
+estilos.css
+body {
+	width: 100%;
+
+}
+
+header{
+	width: 100%;
+	display: inline-block;
+	background-color: #ccccff;
+	padding: 5px;
+	color: black;
+	text-align: center;
+
+}
+
+header li {
+	background-color: #ccccff;
+	color: white;
+	padding: 5px;
+	display: inline-block;
+
+}
+
+header ul {
+	float: left;
+}
+
+header a{
+	float: right;
+
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+
+	
+}
+
+nav {
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	border: 10px solid black;
+	color: white;
+
+}
+
+nav a {
+	color: white;
+}
+
+
+main {
+	width: 70%;
+	height: 600px;
+	float: left;
+	text-align: justify;
+	background-color: #ccf5ff;
+
+
+
+}
+
+article {
+	width: 95%;
+	background-color: #ccf5ff;
+	border: 10px purple;
+
+	
+}
+
+section h1 {
+	padding: 20px;
+	
+
+}
+
+aside div {
+	width: 28%;
+	height: 100px;
+	float: right;
+	padding: 0,2px;
+
+}
+aside div h3 h5 p {
+	float: right;
+}
+
+aside img {
+	float: left;
+	height: 90px;
+	width: 30%;
+}
+
+footer {
+	background-color: #ccccff;
+	display: inline-block;
+	color: black;
+	width:100%;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
+
+
