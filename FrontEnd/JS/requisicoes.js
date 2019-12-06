@@ -44,4 +44,7 @@ function enviarForm() {
 	})
 	.then((data) => console.log(data))
 	.catch(err => console.log('Error message:', err.statusText));
+	alert("Cadastrado com sucesso!");
+
 }
+
