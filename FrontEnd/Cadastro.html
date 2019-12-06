@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilosreq.css">
+</head>
+<body>
+	<div class="container fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<table class="table stripped" id="tabeladedados">
+					<tr>
+						<th>id</th>
+						<th>nome</th>
+						<th>email</th>
+						<th>sexo</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 centered">
+				<button onClick="adicionarPessoa()" class="btn btn-success">Adicionar Pessoa</button>
+			</div>
+		</div>
+		<div class="row formPessoa" id="formPessoa">
+			<div class="col-sm-12">
+				<h1>Adicionar uma nova pessoa</h1>
+				<form id="adicionarPessoa" action="javascript:enviarForm()">
+					<div class="form-group">
+						<label for="nome">Nome</label>
+						<input type="text" class="form-control" aria-describedby="nomeHelp" id="nome" placeholder="Digite seu nome">
+						<small id="nomeHelp" class="form-text text-muted">Não vamos publicar seu nome</small>
+					</div> 
+					<div class="form-group">
+						<label for="email">email</label>
+						<input type="text" class="form-control" id="email" placeholder="Digite seu email">
+						<small id="emailHelp" class="form-text text-muted">email</small>
+					</div>  
+					<div class="form-group">
+						<label for="peso">Sexo</label>
+						<br>
+						<div class="form-check-inline">
+							<label class="form-check-label"></label>
+							<input type="radio" class="form-check-input" value="1" name="sexo">Masculino		
+						</div>
+						<div class="form-check-inline">
+							<label class="form-check-label"></label>
+							<input type="radio" class="form-check-input" value="2" name="sexo">Feminino			    
+						</div>
+						<div class="form-check-inline">
+							<label class="form-check-label"></label>
+							<input type="radio" class="form-check-input" value="3" name="sexo">Outros		    
+						</div>
+					</div>				  
+					<input type="submit" class="btn btn-primary" value="Enviar">
+				</form>				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/requisicoes.js"></script>
+</body>
+</html>
